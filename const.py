@@ -2,7 +2,7 @@
 class _CONST(object):
     LOCALHOST = 'localhost'
 
-    STR_TEMPLATE = '''
+    STR_TEMPLATE = '''# -*- coding:utf-8 -*-
 from traceback import print_exc
 
 from django.test import Client

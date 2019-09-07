@@ -1,0 +1,104 @@
+{
+	"id": "f9e30daf-1eec-3959-79cd-2f0b179e3164",
+	"name": "ag",
+	"description": "",
+	"order": [
+		"3b46f06b-2448-d065-18df-f4ef623f3229",
+		"b699cf92-274f-3281-e288-f70f50c9b3d5"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1567872266484,
+	"owner": "1625012",
+	"public": false,
+	"requests": [
+		{
+			"id": "3b46f06b-2448-d065-18df-f4ef623f3229",
+			"headers": "",
+			"headerData": [],
+			"url": "https://www.yunfuag.com/wx/api/v1/ag_pro?type=index&page=1&kind=es",
+			"queryParams": [
+				{
+					"key": "type",
+					"value": "index",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "page",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "kind",
+					"value": "es",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1567872306241,
+			"name": "https://www.yunfuag.com/wx/api/v1/ag_pro?type=index&page=1&kind=xl",
+			"description": "",
+			"collectionId": "f9e30daf-1eec-3959-79cd-2f0b179e3164",
+			"responses": []
+		},
+		{
+			"id": "b699cf92-274f-3281-e288-f70f50c9b3d5",
+			"headers": "",
+			"headerData": [],
+			"url": "https://www.yunfuag.com/wx/api/v1/ag_pro?type=index&page=1&kind=xl",
+			"queryParams": [
+				{
+					"key": "type",
+					"value": "index",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "page",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "kind",
+					"value": "xl",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "f9e30daf-1eec-3959-79cd-2f0b179e3164",
+			"data": null,
+			"dataMode": "params",
+			"name": "https://www.yunfuag.com/wx/api/v1/ag_pro?type=index&page=1&kind=xl",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1567872971119,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		}
+	]
+}

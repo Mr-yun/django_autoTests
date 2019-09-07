@@ -98,9 +98,10 @@ class AutoTests(object):
                 if view_url not in dict_url:
                     dict_url[view_url] = {CONST.METHOD_GET: [], CONST.METHOD_PUT: [], CONST.METHOD_POST: [],
                                           CONST.METHOD_DELETE: []}
-                dict_url[view_url][z.get('method').lower()].append({'url': '/' + '/'.join(z.get('url').split('/')[1:]),
-                                                                    'full_url': 'http://' + z.get('url'),
-                                                                    'method': z.get(parameter_method).lower()})
+                dict_url[view_url][z.get('method').lower()].append(
+                    {'url': '/' + '/'.join(z.get('url').split('.')[-1].split('/')[1:]),
+                     'full_url': 'http://' + z.get('url') if 'http' not in z.get('url') else z.get('url'),
+                     'method': z.get(parameter_method).lower()})
 
                 if z.get(parameter_method) == CONST.METHOD_POST or z.get(parameter_method) == CONST.METHOD_PUT:
                     # 获取提交数据
@@ -125,7 +126,7 @@ class AutoTests(object):
     '''
         for k, v in list_method.items():
             self.str_template += '''
-            #{}\n'''.format(k)
+        #{}\n'''.format(k)
             if v.get(CONST.METHOD_POST):
                 self.str_template += '        ' + v.get(CONST.METHOD_POST) + '\n'
             if v.get(CONST.METHOD_GET):

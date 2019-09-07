@@ -4,11 +4,12 @@ import os
 from json import loads
 
 from auto_tests import AutoTests
+from const import CONST
 from loggers.logger import log
 
 def get_json():
     list_json = []
-    for i in os.listdir(JSON_PATH):
+    for i in os.listdir(CONST.JSON_PATH):
         if i.endswith('.json'):
             log.info('read json_files files:{}'.format(i))
             with open(os.path.join(CONST.JSON_PATH, i), 'r') as f:
